@@ -1,21 +1,6 @@
 <template>
   <Layout>
-    <div class="intro front">
-      <header class="group vcenter intro__header">
-        <h1>Hey, My name is farzin</h1>
-        <h6>
-          I'm a second year computer science student at sharif university of
-          technology
-        </h6>
-      </header>
-
-      <section id="view-portfolio">
-        <a class="portfolio-button button" href="#works" align="middle">
-          <span> View Portfolio </span>
-          <font-awesome-icon :icon="['fas', 'angle-down']"/>
-        </a>
-      </section>
-    </div>
+    <Intro :personal="myProfile.personal" />
 
     <div class="portfolio-works container" id="works">
       <h2>My portfolio Works</h2>
@@ -45,10 +30,19 @@
 </template>
 
 <script>
+import Intro from "@/components/Intro.vue";
+import profile from "@/data/profile.json";
+
 export default {
+  components: {
+    Intro,
+  },
   metaInfo: {
-    title: "Hello, world!"
-  }
+    title: "Farzin Nasiri",
+  },
+  data: () => ({
+   myProfile:profile
+  }),
 };
 </script>
 
@@ -77,7 +71,7 @@ query{
   box-sizing: border-box;
   width: 100%;
   padding: 17rem 5rem 17rem 5rem;
-  background: #1E88E5;
+  background: #1e88e5;
   color: white;
   text-align: center;
   font-size: 1rem;
@@ -111,7 +105,7 @@ query{
   text-transform: uppercase;
   font-weight: 300;
 }
-.portfolio-button:hover{
+.portfolio-button:hover {
   text-decoration: none;
 }
 </style>

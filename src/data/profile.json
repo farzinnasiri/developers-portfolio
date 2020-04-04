@@ -1,0 +1,23 @@
+{
+    "personal": {
+      "name": "Farzin",
+      "full_name": "Farzin Nasiri",
+      "roles": ["Junior Software Engineer"]
+    },
+    "githubUrl": "https://github.com/ittus/vue-developer-profile",
+    "socials": [
+      {
+        "name": "Github",
+        "icon": "github",
+        "link": "",
+        "color": "#333"
+      },
+      {
+        "name": "Linkedin",
+        "icon": "linkedin-in",
+        "link": "",
+        "color": "#0077B5"
+      }
+    ]
+  }
+  

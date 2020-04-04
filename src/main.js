@@ -1,8 +1,8 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import DefaultLayout from '~/layouts/Default.vue'
-import '~/vendor/bootstrap.min.css'
+import DefaultLayout from '@/layouts/Default.vue'
+import '@/vendor/bootstrap.min.css'
 
 import { library,dom } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
