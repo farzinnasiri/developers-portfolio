@@ -14,6 +14,10 @@ library.add(fab)
 dom.watch()
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
+   head.link.push({
+     rel: "stylesheet",
+     href: "https://fonts.googleapis.com/css?family=Inconsolata"
+   });
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.component('Layout', DefaultLayout)
 }
