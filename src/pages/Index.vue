@@ -1,23 +1,12 @@
 <template>
-  <Layout>
-    <div class="intro front">
-      <header class="group vcenter intro__header">
-        <h1>Hey, My name is farzin</h1>
-        <h6>
-          I'm a second year computer science student at sharif university of
-          technology
-        </h6>
-      </header>
-
-      <section id="view-portfolio">
-        <a class="portfolio-button button" href="#works" align="middle">
-          <span> View Portfolio </span>
-          <font-awesome-icon :icon="['fas', 'angle-down']"/>
-        </a>
-      </section>
+  <div class="container-fluid">
+    <div class="row">
+      <intro :personal="myProfile.personal" />
     </div>
-
-    <div class="portfolio-works container" id="works">
+    <div class="row">
+      <about />
+    </div>
+    <div class="portfolio-works container-fluid row" id="works">
       <h2>My portfolio Works</h2>
       <div class="row">
         <div
@@ -41,14 +30,25 @@
         </div>
       </div>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <script>
+import Intro from "@/components/Intro.vue";
+import About from "@/components/About.vue";
+import profile from "@/data/profile.json";
+
 export default {
+  components: {
+    Intro,
+    About,
+  },
   metaInfo: {
-    title: "Hello, world!"
-  }
+    title: "Farzin Nasiri",
+  },
+  data: () => ({
+    myProfile: profile,
+  }),
 };
 </script>
 
@@ -72,46 +72,22 @@ query{
 </page-query>
 
 <style>
-.intro {
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 17rem 5rem 17rem 5rem;
-  background: #1E88E5;
-  color: white;
-  text-align: center;
-  font-size: 1rem;
+html {
+  scroll-behavior: smooth;
 }
-
 .work {
-  padding: 2rem 2rem;
+  padding: 2rem;
 }
 
 .work-card {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding-top: 1rem;
   border-radius: 0.2rem;
 }
 
-.portfolio-button {
-  position: absolute !important;
-  color: white;
-  left: 50%;
-  text-align: center;
-  bottom: 10px;
-  transform: translateX(-50%);
-  margin: 7px 0px 0px;
-  padding: 14px 14px 7px;
-}
-.portfolio-button span {
-  display: block;
-}
-
-.button {
-  text-transform: uppercase;
-  font-weight: 300;
-}
-.portfolio-button:hover{
-  text-decoration: none;
+.portfolio-works {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: black;
 }
 </style>
