@@ -35,6 +35,11 @@
       "icon": "instagram",
       "link": "https://www.instagram.com/farzin.nasirii/",
       "color": "#0077B5"
+    },
+    {
+      "name":"Skype",
+      "icon":"skype",
+      "link":"https://join.skype.com/invite/pz8VcpKdGQwt"
     }
   ]
 }
