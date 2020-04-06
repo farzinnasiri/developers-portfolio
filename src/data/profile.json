@@ -1,23 +1,28 @@
 {
-    "personal": {
-      "name": "Farzin",
-      "full_name": "Farzin Nasiri",
-      "roles": ["Junior Software Engineer","Book Worm","Computer Science Student"]
+  "personal": {
+    "name": "Farzin",
+    "full_name": "Farzin Nasiri",
+    "roles": [
+      "Junior Software Engineer",
+      "Book Worm",
+      "Computer Science Student"
+    ],
+    "about": "I'm a sophomore stundent, currently studying computer science at sharif univesity of technolgy and work as a part-time junior software engineer.",
+    "interests": "I'm intrested in programming, computer networks and developing cool, unique and poweroff computer programs. I want to create products with design architecture, high scalability and easy to maintain."
+  },
+  "githubUrl": "https://github.com/ittus/vue-developer-profile",
+  "socials": [
+    {
+      "name": "Github",
+      "icon": "github",
+      "link": "",
+      "color": "#333"
     },
-    "githubUrl": "https://github.com/ittus/vue-developer-profile",
-    "socials": [
-      {
-        "name": "Github",
-        "icon": "github",
-        "link": "",
-        "color": "#333"
-      },
-      {
-        "name": "Linkedin",
-        "icon": "linkedin-in",
-        "link": "",
-        "color": "#0077B5"
-      }
-    ]
-  }
-  
+    {
+      "name": "Linkedin",
+      "icon": "linkedin-in",
+      "link": "",
+      "color": "#0077B5"
+    }
+  ]
+}

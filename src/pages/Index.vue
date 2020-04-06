@@ -4,7 +4,7 @@
       <intro :personal="myProfile.personal" />
     </div>
     <div class="row">
-      <about />
+      <about :personal="myProfile.personal" />
     </div>
     <div class="portfolio-works container-fluid row" id="works">
       <h2>My portfolio Works</h2>

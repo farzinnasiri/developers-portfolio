@@ -13,12 +13,16 @@
       <div class="col-sm-6 about-text">
         <div class="card text-black">
           <div class="card-body">
-            <h3 class="card-title">About</h3>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
+            <h3 class="card-title">About Me</h3>
+            <p class="card-text about-me">
+              Hello,I'm <strong>{{ personal.full_name }}</strong
+              >.
+              {{ personal.about }}
             </p>
-            <a href="#" class="btn text-white border-light">Outline</a>
+            <p class="card-text interests">
+              {{ personal.interests }}
+            </p>
+            <g-link class="cv-button float-right">MY CV</g-link>
           </div>
         </div>
       </div>
@@ -28,6 +32,15 @@
 <script>
 export default {
   name: "",
+  props: {
+    personal: {
+      type: Object,
+      required: true,
+      default: function() {
+        return {};
+      },
+    },
+  },
   components: {},
   data: () => ({}),
 };
@@ -46,15 +59,47 @@ export default {
 .about-image {
   text-align: center;
 }
-.about-text {
-
+.about-me {
+  font-size: 1.3rem;
 }
-.card{
-    border: none;
+.interests {
+  font-size: 1.1rem;
 }
-@media screen and (max-width: 480px) {
+.card {
+  border: none;
+  width: 42rem;
+}
+@media screen and (max-width: 35rem) {
   .profile-image {
     width: 300px;
   }
+  .card {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 95rem) {
+  .profile-image {
+    width: 350px;
+  }
+  .card {
+    width: 25rem;
+  }
+}
+.cv-button {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgb(86, 152, 226);
+  border: 2px solid rgb(86, 152, 226);
+  cursor: pointer;
+  width: max-content;
+  transition: 0.25s ease;
+}
+.cv-button:hover {
+  color: rgb(86, 152, 226);
+  background-color: transparent;
+  text-decoration: none;
 }
 </style>
