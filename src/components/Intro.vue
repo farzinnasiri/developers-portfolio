@@ -26,9 +26,11 @@
             </ClientOnly>
           </p>
         </div>
+        <div class="col-sm-12 mt-5">
+          <intro-social :socials="socials" />
+        </div>
       </div>
     </div>
-
     <section id="view-portfolio">
       <a class="portfolio-button button" href="#works" align="middle">
         <span> View Portfolio </span>
@@ -39,25 +41,29 @@
 </template>
 
 <script>
+import IntroSocial from "@/components/IntroSocial.vue";
+
 export default {
-  name: "",
+  name: "Intro",
+  components: {},
   props: {
     socials: {
       type: Array,
       required: false,
-      default: function () {
+      default: function() {
         return [];
       },
     },
     personal: {
       type: Object,
       required: true,
-      default: function () {
+      default: function() {
         return {};
       },
     },
   },
   components: {
+    "intro-social": IntroSocial,
     VueTyper: () => import("vue-typer").then((m) => m.VueTyper),
   },
   data: () => ({}),
@@ -70,7 +76,7 @@ export default {
   box-sizing: border-box;
   width: 100%;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   background: #111111;
   color: white;
   text-align: center;
@@ -87,7 +93,6 @@ export default {
   text-align: center;
   bottom: 10px;
   transform: translateX(-50%);
-  margin: 7px 0px 0px;
   padding: 14px 14px 7px;
 }
 .portfolio-button span {

@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <intro :personal="myProfile.personal" />
+      <intro :personal="myProfile.personal" :socials="myProfile.socials" />
     </div>
     <div class="row">
       <about :personal="myProfile.personal" />
@@ -37,11 +37,13 @@
 import Intro from "@/components/Intro.vue";
 import About from "@/components/About.vue";
 import profile from "@/data/profile.json";
+import IntroSocial from "@/components/IntroSocial.vue";
 
 export default {
   components: {
     Intro,
     About,
+    IntroSocial,
   },
   metaInfo: {
     title: "Farzin Nasiri",

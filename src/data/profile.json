@@ -15,13 +15,25 @@
     {
       "name": "Github",
       "icon": "github",
-      "link": "",
+      "link": "https://github.com/farzinnasiri",
       "color": "#333"
     },
     {
       "name": "Linkedin",
       "icon": "linkedin-in",
-      "link": "",
+      "link": "https://www.linkedin.com/in/farzin-nasiri-338a70198/",
+      "color": "#0077B5"
+    },
+    {
+      "name": "Telegram",
+      "icon": "telegram",
+      "link": "https://t.me/farzinnasiri",
+      "color": "#0077B5"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "link": "https://www.instagram.com/farzin.nasirii/",
       "color": "#0077B5"
     }
   ]

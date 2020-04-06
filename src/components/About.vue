@@ -91,14 +91,14 @@ export default {
   font-size: 15px;
   font-weight: 500;
   color: #fff;
-  background-color: rgb(86, 152, 226);
-  border: 2px solid rgb(86, 152, 226);
+  background-color: rgb(12, 153, 172);
+  border: 2px solid rgb(12, 153, 172);
   cursor: pointer;
   width: max-content;
   transition: 0.25s ease;
 }
 .cv-button:hover {
-  color: rgb(86, 152, 226);
+  color: rgb(12, 153, 172);
   background-color: transparent;
   text-decoration: none;
 }
