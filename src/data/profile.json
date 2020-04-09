@@ -8,9 +8,13 @@
       "Computer Science Student"
     ],
     "about": "I'm a sophomore stundent, currently studying computer science at sharif univesity of technolgy and work as a part-time junior software engineer.",
-    "interests": "I'm intrested in programming, computer networks and developing cool, unique and poweroff computer programs. I want to create products with design architecture, high scalability and easy to maintain."
+    "interests": "I'm intrested in programming, computer networks and developing cool, unique and poweroff computer programs. I want to create products with design architecture, high scalability and easy to maintain.",
+    "contact_info":[
+      "farzin-nasiri@hotmail.com",
+      "telegram: @FarzinNasiri",
+      "09227185120"
+    ]
   },
-  "githubUrl": "https://github.com/ittus/vue-developer-profile",
   "socials": [
     {
       "name": "Github",

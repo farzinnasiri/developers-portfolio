@@ -1,5 +1,5 @@
 <template>
-  <div class="intro">
+  <div class="intro" id="intro">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 text-center">
@@ -122,11 +122,5 @@ export default {
 .vue-typer .custom.caret {
   width: 0.5rem;
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-.profile-image {
-  border-radius: 5%;
-  padding: 1rem 1rem 1rem 1rem;
-  margin-bottom: 2rem;
 }
 </style>
