@@ -49,7 +49,7 @@ export default {
 <style>
 .profile-image {
   border-radius: 0%;
-  box-shadow: -30px -25px 0px 10px rgb(51, 50, 50);
+  box-shadow: -30px -25px 0px 10px  rgb(95, 94, 94);
   padding: 0px;
   margin-top: 2rem;
 }
@@ -85,7 +85,7 @@ export default {
 @media screen and (max-width: 60rem) {
   .profile-image {
     width: 300px;
-    box-shadow: -15px -20px 0px 8px rgb(51, 50, 50);
+    box-shadow: -15px -20px 0px 8px rgb(95, 94, 94);
   }
   .card {
     width: 20rem;

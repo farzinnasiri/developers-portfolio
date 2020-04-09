@@ -1,6 +1,6 @@
 <template>
   <div class="intro">
-    <div class="container-fluid vcenter ">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 text-center">
           <h1>
@@ -45,7 +45,6 @@ import IntroSocial from "@/components/IntroSocial.vue";
 
 export default {
   name: "Intro",
-  components: {},
   props: {
     socials: {
       type: Array,
