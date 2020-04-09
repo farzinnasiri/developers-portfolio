@@ -11,11 +11,12 @@
         />
       </div>
       <div class="col-sm-6 about-text">
-        <div class="card text-black">
+        <div class="card">
           <div class="card-body">
             <h3 class="card-title">About Me</h3>
             <p class="card-text about-me">
-              Hello,I'm <strong>{{ personal.full_name }}</strong
+              Hello,I'm
+              <strong style="color:green;">{{ personal.full_name }}</strong
               >.
               {{ personal.about }}
             </p>
@@ -66,23 +67,28 @@ export default {
   font-size: 1.1rem;
 }
 .card {
+  margin: 0 auto;
+  float: none;
   border: none;
   width: 42rem;
+  color: white;
+  background-color: black;
 }
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 95rem) {
   .profile-image {
     width: 300px;
   }
   .card {
-    width: 20rem;
+    width: 25rem;
   }
 }
-@media screen and (max-width: 95rem) {
+@media screen and (max-width: 60rem) {
   .profile-image {
-    width: 350px;
+    width: 300px;
+    box-shadow: -15px -20px 0px 8px rgb(51, 50, 50);
   }
   .card {
-    width: 25rem;
+    width: 20rem;
   }
 }
 .cv-button {

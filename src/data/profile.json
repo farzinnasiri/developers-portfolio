@@ -15,26 +15,22 @@
     {
       "name": "Github",
       "icon": "github",
-      "link": "https://github.com/farzinnasiri",
-      "color": "#333"
+      "link": "https://github.com/farzinnasiri"
     },
     {
       "name": "Linkedin",
       "icon": "linkedin-in",
-      "link": "https://www.linkedin.com/in/farzin-nasiri-338a70198/",
-      "color": "#0077B5"
+      "link": "https://www.linkedin.com/in/farzin-nasiri-338a70198/"
     },
     {
       "name": "Telegram",
       "icon": "telegram",
-      "link": "https://t.me/farzinnasiri",
-      "color": "#0077B5"
+      "link": "https://t.me/farzinnasiri"
     },
     {
       "name": "Instagram",
       "icon": "instagram",
-      "link": "https://www.instagram.com/farzin.nasirii/",
-      "color": "#0077B5"
+      "link": "https://www.instagram.com/farzin.nasirii/"
     },
     {
       "name":"Skype",

@@ -77,7 +77,7 @@ export default {
   width: 100%;
   padding-top: 10rem;
   padding-bottom: 8rem;
-  background: #111111;
+  background: black;
   color: white;
   text-align: center;
   font-size: 1rem;

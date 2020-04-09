@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid page">
     <div class="row">
       <intro :personal="myProfile.personal" :socials="myProfile.socials" />
     </div>
@@ -77,6 +77,9 @@ query{
 html {
   scroll-behavior: smooth;
 }
+.page {
+  background-color: rgb(78, 78, 78);
+}
 .work {
   padding: 2rem;
 }
@@ -90,6 +93,5 @@ html {
 .portfolio-works {
   width: 100%;
   margin-top: 3rem;
-  background-color: black;
 }
 </style>
