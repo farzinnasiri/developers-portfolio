@@ -81,6 +81,6 @@ export default {
   padding-top: 2rem;
 }
 .contact_info #info:hover {
-  color: green;
+  color: rgb(12, 153, 172);
 }
 </style>
