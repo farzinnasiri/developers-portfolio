@@ -51,8 +51,8 @@ export default {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
   color: white;
   text-align: center;
   font-size: 1rem;

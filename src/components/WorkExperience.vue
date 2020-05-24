@@ -5,7 +5,14 @@
       <ul class=" pl-0">
         <li v-for="experience in experiences" :key="experience.title">
           <a :href="experience.link" target="_blank">
-            {{experience.title}}
+            {{ experience.title }}
+            {{ experience.link }}
+            <g-image
+              class="logo"
+              :src="getPic(experience.link)"
+              alt="Profile Photo"
+              quality="100"
+            />
           </a>
         </li>
       </ul>
@@ -25,6 +32,11 @@ export default {
       },
     },
   },
+  methods: {
+    getPic(pic_name) {
+      return require("@/assets/" + pic_name + ".jpg");
+    },
+  },
   components: {},
   data: () => ({}),
 };
@@ -36,9 +48,12 @@ export default {
   box-sizing: border-box;
   width: 100%;
   padding-top: 2rem;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
   color: white;
   text-align: center;
   font-size: 1rem;
+}
+.logo{
+    width: 100px;
 }
 </style>
