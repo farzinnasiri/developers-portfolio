@@ -50,7 +50,7 @@ export default {
 .profile-image {
   border-radius: 0%;
   box-shadow: -30px -25px 0px 10px  rgb(95, 94, 94);
-  padding: 0px;
+  margin-bottom: 40px;
   margin-top: 2rem;
 }
 .about {

@@ -17,13 +17,13 @@
           <div class="card-body">
             <a
               class="card-title"
-              style="font-size:20pt;text-decoration: none;"
+              style="font-weight:bold;font-size:20pt;text-decoration: none;"
               :href="experience.link"
               target="_blank"
             >
               {{ experience.title }}
             </a>
-            <p class="card-text">
+            <p class="card-text" style="font-size:13pt;padding-top:5px">
               {{ experience.role }}
             </p>
           </div>
