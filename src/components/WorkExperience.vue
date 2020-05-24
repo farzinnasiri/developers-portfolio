@@ -17,14 +17,17 @@
           <div class="card-body">
             <a
               class="card-title"
-              style="font-weight:bold;font-size:20pt;text-decoration: none;"
+              style="text-decoration:none;"
               :href="experience.link"
               target="_blank"
             >
               {{ experience.title }}
             </a>
-            <p class="card-text" style="font-size:13pt;padding-top:5px">
+            <p class="card-text">
               {{ experience.role }}
+            </p>
+            <p class="card-text">
+              {{ experience.years }}
             </p>
           </div>
         </div>
@@ -47,9 +50,9 @@ export default {
   },
   methods: {
     getPic(pic_name) {
-        if (pic_name == ""){
-            return ""
-        }
+      if (pic_name == "") {
+        return "";
+      }
       return require("@/assets/" + pic_name + ".png");
     },
   },
@@ -77,5 +80,19 @@ export default {
 .logo {
   width: 200px;
   align-self: center;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 20pt;
+  color: rgb(12, 153, 172);
+}
+.card-text {
+  font-size: 13pt;
+  padding-top: 10px;
+}
+.card-body {
+  a:hover {
+    color: white;
+  }
 }
 </style>
