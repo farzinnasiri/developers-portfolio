@@ -42,20 +42,20 @@
     {
       "title": "Konkur & Olympiad",
       "role": "Physics Instructor",
-      "logo": "profile_photo",
+      "logo": "teacher",
       "link": ""
     },
     {
       "title": "Web Designing Free lancer",
       "role": "Wordpress website designer",
-      "logo": "profile_photo",
+      "logo": "wordpress",
       "link": ""
     },
     {
       "title": "Carriot",
       "role": "Software engineer",
-      "logo": "profile_photo",
-      "link": "http://carriot.ir/"
+      "logo": "carriot-logo",
+      "link": "http://carriot.ir"
     }
   ]
 }

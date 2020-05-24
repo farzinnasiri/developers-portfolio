@@ -47,7 +47,10 @@ export default {
   },
   methods: {
     getPic(pic_name) {
-      return require("@/assets/" + pic_name + ".jpg");
+        if (pic_name == ""){
+            return ""
+        }
+      return require("@/assets/" + pic_name + ".png");
     },
   },
   components: {},
