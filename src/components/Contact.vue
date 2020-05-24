@@ -7,7 +7,7 @@
             Contact Me
           </h2>
           <div class="contact_info">
-            <p id = "info" v-for="item in personal.contact_info" :key="item">
+            <p id="info" v-for="item in personal.contact_info" :key="item">
               {{ item }}
             </p>
           </div>

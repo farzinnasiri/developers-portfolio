@@ -22,7 +22,7 @@ export default {
   data: () => ({}),
 };
 </script>
-<style lang="scss" scope>
+<style lang="scss" >
 .svg-inline--fa.fa-w-10 {
   width: 0.625em;
 }

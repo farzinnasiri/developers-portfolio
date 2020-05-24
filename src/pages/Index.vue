@@ -9,8 +9,8 @@
     <div class="row">
       <portfolio />
     </div>
-      <div class="row">
-      <contact :personal="myProfile.personal"/>
+    <div class="row">
+      <contact :personal="myProfile.personal" />
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ import Intro from "@/components/Intro.vue";
 import About from "@/components/About.vue";
 import profile from "@/data/profile.json";
 import Portfolio from "@/components/Portfolio.vue";
-import Contact from "@/components/Contact.vue"
+import Contact from "@/components/Contact.vue";
 export default {
   components: {
     Intro,
