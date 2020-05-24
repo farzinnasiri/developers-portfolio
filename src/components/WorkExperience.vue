@@ -1,46 +1,30 @@
 <template>
-  <div class="work-experience container-fluid" id="works">
+  <div class="work-experience container-fluid" id="experiences">
     <h2>My Work Experience</h2>
     <div class="row">
-      <div
-        class="col-md-6 work"
-        v-for="work in $static.allWork.edges"
-        :key="work.node.id">
-        <div class="card work-card">
-          <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
-          <div class="card-body">
-            <h5 class="card-title">{{ work.node.title }}</h5>
-            <p class="card-text">
-              {{ work.node.description }}
-            </p>
-            <g-link class="cv-button float-right">Source code</g-link>
-            <g-link class="cv-button float-left">Live Demo</g-link>
-          </div>
-        </div>
-      </div>
+      <ul class=" pl-0">
+        <li v-for="experience in experiences" :key="experience.title">
+          <a :href="experience.link" target="_blank">
+            {{experience.title}}
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
-<static-query>
-query{
-  allWork{
-    totalCount
-    edges{
-      node{
-        id
-        title
-        description
-        content
-        path
-      }
-    }
-  }
 
-}
-</static-query>
 <script>
 export default {
   name: "WorkExperience",
+  props: {
+    experiences: {
+      type: Array,
+      required: false,
+      default: function() {
+        return [];
+      },
+    },
+  },
   components: {},
   data: () => ({}),
 };
@@ -51,21 +35,10 @@ export default {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 2rem;
   padding-bottom: 8rem;
   color: white;
   text-align: center;
   font-size: 1rem;
-}
-.work-card {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding-top: 1rem;
-  border-radius: 0.5rem;
-  background-color: white;
-  color: black;
-}
-
-.work {
-  padding: 2rem;
 }
 </style>

@@ -10,7 +10,7 @@
       <portfolio />
     </div>
     <div class="row">
-      <experience :personal="myProfile.personal" />
+      <experience :experiences="myProfile.experiences" />
     </div>
     <div class="row">
       <contact :personal="myProfile.personal" />
