@@ -2,20 +2,33 @@
   <div class="work-experience container-fluid" id="experiences">
     <h2>My Work Experience</h2>
     <div class="row">
-      <ul class=" pl-0">
-        <li v-for="experience in experiences" :key="experience.title">
-          <a :href="experience.link" target="_blank">
-            {{ experience.title }}
-            {{ experience.link }}
-            <g-image
-              class="logo"
-              :src="getPic(experience.link)"
-              alt="Profile Photo"
-              quality="100"
-            />
-          </a>
-        </li>
-      </ul>
+      <div class="card-columns">
+        <div
+          class="card experience-card"
+          v-for="experience in experiences"
+          :key="experience.title"
+        >
+          <g-image
+            class="logo"
+            :src="getPic(experience.logo)"
+            alt="Logo"
+            quality="100"
+          />
+          <div class="card-body">
+            <a
+              class="card-title"
+              style="font-size:20pt;text-decoration: none;"
+              :href="experience.link"
+              target="_blank"
+            >
+              {{ experience.title }}
+            </a>
+            <p class="card-text">
+              {{ experience.role }}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -42,18 +55,24 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .work-experience {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
+  width: auto;
   padding-top: 2rem;
   padding-bottom: 5rem;
   color: white;
   text-align: center;
-  font-size: 1rem;
 }
-.logo{
-    width: 100px;
+.experience-card {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+}
+.logo {
+  width: 200px;
+  align-self: center;
 }
 </style>
