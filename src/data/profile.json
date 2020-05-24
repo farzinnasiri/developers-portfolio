@@ -43,19 +43,23 @@
       "title": "Konkur & Olympiad",
       "role": "Physics Instructor",
       "logo": "teacher",
-      "link": ""
+      "link": "",
+      "years": "AUG 2018 - OCT 2019"
+    },
+    {
+      "title": "Carriot",
+      "role": "Backend Developer",
+      "logo": "carriot-logo",
+      "link": "http://carriot.ir",
+      "years": "JAN 2020 - NOW"
     },
     {
       "title": "Web Designing Free lancer",
       "role": "Wordpress website designer",
       "logo": "wordpress",
-      "link": ""
-    },
-    {
-      "title": "Carriot",
-      "role": "Software engineer",
-      "logo": "carriot-logo",
-      "link": "http://carriot.ir"
+      "link": "",
+      "years": "JUN 2019 - MAR 2020"
+
     }
   ]
 }
