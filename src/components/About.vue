@@ -23,7 +23,12 @@
             <p class="card-text interests">
               {{ personal.interests }}
             </p>
-            <g-link class="cv-button float-right">MY CV</g-link>
+            <g-link
+              class="cv-button float-right"
+              href="/resume.pdf"
+              target="_blank"
+              >MY CV</g-link
+            >
           </div>
         </div>
       </div>
@@ -49,7 +54,7 @@ export default {
 <style>
 .profile-image {
   border-radius: 0%;
-  box-shadow: -30px -25px 0px 10px  rgb(95, 94, 94);
+  box-shadow: -30px -25px 0px 10px rgb(95, 94, 94);
   margin-bottom: 40px;
   margin-top: 2rem;
 }
