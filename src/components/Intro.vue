@@ -32,8 +32,8 @@
       </div>
     </div>
     <section id="view-portfolio">
-      <a class="portfolio-button button" href="#works" align="middle">
-        <span> View Portfolio </span>
+      <a class="portfolio-button button" href="#contact-info" align="middle">
+        <span> Contact Me </span>
         <font-awesome-icon :icon="['fas', 'angle-down']" />
       </a>
     </section>

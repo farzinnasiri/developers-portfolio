@@ -6,12 +6,12 @@
     <div class="row">
       <about :personal="myProfile.personal" />
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <portfolio />
     </div>
     <div class="row">
       <experience :experiences="myProfile.experiences" />
-    </div>
+    </div> -->
     <div class="row">
       <contact :personal="myProfile.personal" />
     </div>
